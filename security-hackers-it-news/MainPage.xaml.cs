@@ -34,15 +34,28 @@ namespace security_hackers_it_news
         }
 
         protected async void tryLoadContent() {
+            
             string[] hnTopIds = await hnApiCli.getTopStoriesIdList();
             hnModelList = new List<HNewsItemModel>();
-            HNewsItemModel tmpItemModel;
+            HNewsItemModel tmpItemModel = await hnApiCli.getStoryById(hnTopIds[0]);
             foreach (string id in hnTopIds)
             {
                 tmpItemModel = await hnApiCli.getStoryById(id);
+                hnDefaultSp.Children.Add(serializeHnModel(tmpItemModel));
                 hnModelList.Add(tmpItemModel);
             }
-            test.Text = hnTopIds[0];
+        }
+
+        private StackPanel serializeHnModel(HNewsItemModel hnim) {
+            StackPanel sp = new StackPanel() { Name= "hnim_"+ hnim.id };
+            TextBlock titleText = new TextBlock() { Text = hnim.title };
+            TextBlock timeText = new TextBlock() { Text = hnim.time };
+            TextBlock scoreText = new TextBlock() { Text = hnim.score };
+
+            sp.Children.Add(titleText);
+            sp.Children.Add(timeText);
+            sp.Children.Add(scoreText);
+            return sp;
         }
     }
 }

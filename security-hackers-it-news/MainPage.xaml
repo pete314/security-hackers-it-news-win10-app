@@ -11,9 +11,10 @@
         <Pivot Title="IT, Security news">
             <PivotItem Header="PivotItem 0">
                 <Grid x:Name="contentGrid">
-                    <StackPanel>
-                        <TextBlock x:Name="test" Text="test"/>
-                    </StackPanel>
+                    <ScrollViewer>
+                        <StackPanel x:Name="hnDefaultSp">
+                        </StackPanel>
+                    </ScrollViewer>
                 </Grid>
             </PivotItem>
             <PivotItem Header="PivotItem 1">

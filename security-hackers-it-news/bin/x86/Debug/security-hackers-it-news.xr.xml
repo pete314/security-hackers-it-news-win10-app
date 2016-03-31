@@ -20,12 +20,10 @@
       <RootProperty Name="Header" />
       <RootProperty Name="Content" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
-      <RootProperty Name="Children" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Content" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
-      <RootProperty Name="Text" />
-    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel" />
     <RootType FullName="security_hackers_it_news.MainPage" />
   </Roots.RootTypes>
 </Roots>

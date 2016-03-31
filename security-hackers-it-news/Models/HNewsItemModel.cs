@@ -11,107 +11,49 @@ namespace security_hackers_it_news.Models
     /// </summary>
     class HNewsItemModel
     {
-        private string title; //if job
+        public string title { get; set; } //if job
+        
+        public string score { get; set; }//story score      
 
-        public string Title
-        {
-            get { return title; }
-            set { title = value; }
-        }
+        
 
 
-        private string score;//story score      
+        public string url { get; set; }//the url for the story
 
-        public string Score
-        {
-            get { return score; }
-            set { score = value; }
-        }
+        
 
 
-        private string url;//the url for the story
+        public string[] kids { get; set; }//comment childs
 
-        public string Url
-        {
-            get { return url; }
-            set { url = value; }
-        }
+        
 
 
-        private List<int> kids;//comment childs
+        public string parent { get; set; } //comment parent
 
-        public List<int> Kids
-        {
-            get { return kids; }
-            set { kids = value; }
-        }
+        
 
 
-        private int parent; //comment parent
+        public string dead { get; set; }//item dead
 
-        public int Parent
-        {
-            get { return parent; }
-            set { parent = value; }
-        }
+        
 
 
-        private bool dead;//item dead
+        public string id { get; set; }
 
-        public bool Dead
-        {
-            get { return dead; }
-            set { dead = value; }
-        }
+        
 
+        public string type { get; set; } //story/job/comment/poll/pollopt
 
-        private int id;
+        
 
-        public int Id
-        {
-            get { return id; }
-            set { id = value; }
-        }
+        public string deleted { get; set; }
 
-        private string type; //story/job/comment/poll/pollopt
-
-        public string Type
-        {
-            get { return type; }
-            set { type = value; }
-        }
-
-        private bool deleted;
-
-        public bool Deleted
-        {
-            get { return deleted; }
-            set { deleted = value; }
-        }
-
-        private string by;//publisher name
-
-        public string By
-        {
-            get { return by; }
-            set { by = value; }
-        }
-
-        private long time;//Unix timestamp
-
-        public long Time
-        {
-            get { return time; }
-            set { time = value; }
-        }
-
-        private string text;
-
-        public string Text
-        {
-            get { return text; }
-            set { text = value; }
-        }
+        
+        public string by { get; set; }//publisher name
+        
+        public string time { get; set; }//Unix timestamp
+        
+        public string text { get; set; }
 
     }
 }

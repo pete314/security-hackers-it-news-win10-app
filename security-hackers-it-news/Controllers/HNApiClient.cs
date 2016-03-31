@@ -22,7 +22,7 @@ namespace security_hackers_it_news.Controllers
         //List of top stories
         protected string top_stories_uri = "/topstories.json";
         //Get single story (mind the {0})
-        protected string single_story_uri
+        protected string single_story_uri = "/item/{0}.json";
 
 
         protected string buildUrlString(string urlName, bool isPretty = false) {
@@ -39,9 +39,10 @@ namespace security_hackers_it_news.Controllers
 
         public async Task<HNewsItemModel> getStoryById(string id) {
             string jsonString = await tryParseUrl(
-                    buildUrlString(top_stories_uri)
+                    buildUrlString(
+                        string.Format(single_story_uri, id))
                 );
-
+            //chould use a try catch, but it will return null if error
             return JsonConvert.DeserializeObject<HNewsItemModel>(jsonString);
         }
     }
