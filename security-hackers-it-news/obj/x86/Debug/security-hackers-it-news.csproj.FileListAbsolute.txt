@@ -194,3 +194,4 @@ E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hack
 E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\obj\x86\Debug\qualifiers.txt.intermediate
 E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\obj\x86\Debug\ProjectArchitectures.txt
+E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\bin\x86\Debug\Newtonsoft.Json.dll

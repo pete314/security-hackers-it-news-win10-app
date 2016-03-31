@@ -8,6 +8,18 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Pivot Title="IT, Security news">
+            <PivotItem Header="PivotItem 0">
+                <Grid x:ConnectionId='1' x:Name="contentGrid">
+                    <StackPanel>
+                        <TextBlock x:ConnectionId='2' x:Name="test" Text="test"/>
+                    </StackPanel>
+                </Grid>
+            </PivotItem>
+            <PivotItem Header="PivotItem 1">
+                <Grid/>
+            </PivotItem>
+        </Pivot>
 
     </Grid>
 </Page>

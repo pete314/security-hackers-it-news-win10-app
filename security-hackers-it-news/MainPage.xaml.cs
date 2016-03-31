@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using security_hackers_it_news.Controllers;
+using security_hackers_it_news.Models;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -22,9 +24,25 @@ namespace security_hackers_it_news
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        HNApiClient hnApiCli;
+        List<HNewsItemModel> hnModelList;
         public MainPage()
         {
             this.InitializeComponent();
+            hnApiCli = new HNApiClient();
+            tryLoadContent();
+        }
+
+        protected async void tryLoadContent() {
+            string[] hnTopIds = await hnApiCli.getTopStoriesIdList();
+            hnModelList = new List<HNewsItemModel>();
+            HNewsItemModel tmpItemModel;
+            foreach (string id in hnTopIds)
+            {
+                tmpItemModel = await hnApiCli.getStoryById(id);
+                hnModelList.Add(tmpItemModel);
+            }
+            test.Text = hnTopIds[0];
         }
     }
 }

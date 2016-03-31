@@ -47,7 +47,7 @@ namespace security_hackers_it_news.Controllers
             client = new HttpClient();
         }
 
-        protected async void tryParseUrl(string url) {
+        protected async Task<string> tryParseUrl(string url) {
             currentURL = url;
             try {
                 httpResponse = await client.GetAsync(new Uri(currentURL));
@@ -58,6 +58,7 @@ namespace security_hackers_it_news.Controllers
             catch{
                 //No internet
             }
+            return (string)jsonString;
         }
 
         protected object getResultAs(string type) {
