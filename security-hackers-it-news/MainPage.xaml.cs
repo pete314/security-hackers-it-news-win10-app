@@ -47,7 +47,9 @@ namespace security_hackers_it_news
         }
 
         private StackPanel serializeHnModel(HNewsItemModel hnim) {
-            StackPanel sp = new StackPanel() { Name= "hnim_"+ hnim.id };
+            StackPanel sp = new StackPanel() { Name = "hnim_" + hnim.id };
+            StackPanel innerSp = new StackPanel();// { Name = "itemHolder", BorderThickness = "0,0,0,1", CornerRadius = "5", VerticalAlignment = "Center" BorderBrush = "{ThemeResource AppBarToggleButtonCheckedPressedBorderThemeBrush}" Margin = "0,0,-10,0"};
+            innerSp.BorderThickness;
             TextBlock titleText = new TextBlock() { Text = hnim.title };
             TextBlock timeText = new TextBlock() { Text = hnim.time };
             TextBlock scoreText = new TextBlock() { Text = hnim.score };
