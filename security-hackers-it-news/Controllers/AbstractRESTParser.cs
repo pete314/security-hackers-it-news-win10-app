@@ -56,7 +56,7 @@ namespace security_hackers_it_news.Controllers
                 }
             }
             catch{
-                //there was no internet 
+                //No internet
             }
         }
 
