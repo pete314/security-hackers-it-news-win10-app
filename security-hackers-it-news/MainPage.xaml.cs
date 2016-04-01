@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using security_hackers_it_news.Controllers;
 using security_hackers_it_news.Models;
 using Windows.Foundation;
@@ -25,39 +27,37 @@ namespace security_hackers_it_news
     public sealed partial class MainPage : Page
     {
         HNApiClient hnApiCli;
-        List<HNewsItemModel> hnModelList;
+        ObservableCollection<HNewsItemModel> news;
         public MainPage()
         {
             this.InitializeComponent();
             hnApiCli = new HNApiClient();
+            news = new ObservableCollection<HNewsItemModel>();
+            NewsList.Source = news;
             tryLoadContent();
         }
-
-        protected async void tryLoadContent() {
-            
+        
+        public async void tryLoadContent() {
             string[] hnTopIds = await hnApiCli.getTopStoriesIdList();
-            hnModelList = new List<HNewsItemModel>();
-            HNewsItemModel tmpItemModel = await hnApiCli.getStoryById(hnTopIds[0]);
+            HNewsItemModel tmpHns;
+            int iCnt = 0;
             foreach (string id in hnTopIds)
             {
-                tmpItemModel = await hnApiCli.getStoryById(id);
-                hnDefaultSp.Children.Add(serializeHnModel(tmpItemModel));
-                hnModelList.Add(tmpItemModel);
+                tmpHns = await hnApiCli.getStoryById(id);
+                news.Add(
+                    tmpHns
+                    );
+                //Load 100 articles only
+                if (++iCnt == 100) break;
             }
         }
 
-        private StackPanel serializeHnModel(HNewsItemModel hnim) {
-            StackPanel sp = new StackPanel() { Name = "hnim_" + hnim.id };
-            StackPanel innerSp = new StackPanel();// { Name = "itemHolder", BorderThickness = "0,0,0,1", CornerRadius = "5", VerticalAlignment = "Center" BorderBrush = "{ThemeResource AppBarToggleButtonCheckedPressedBorderThemeBrush}" Margin = "0,0,-10,0"};
-            innerSp.BorderThickness;
-            TextBlock titleText = new TextBlock() { Text = hnim.title };
-            TextBlock timeText = new TextBlock() { Text = hnim.time };
-            TextBlock scoreText = new TextBlock() { Text = hnim.score };
-
-            sp.Children.Add(titleText);
-            sp.Children.Add(timeText);
-            sp.Children.Add(scoreText);
-            return sp;
+        private async void Url_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            var text = ((TextBlock)sender).Text;
+            string url = text.Replace("Url:", "");
+            var uri = new Uri(@url);
+            var success = await Windows.System.Launcher.LaunchUriAsync(uri);
         }
     }
 }
