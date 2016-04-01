@@ -18,7 +18,8 @@
                                x:Phase="1" 
                                Style="{ThemeResource BodyTextBlockStyle}" 
                                HorizontalAlignment="Left"
-                           Height="85"/>
+                           Height="85"
+                           Tapped="Title_Tapped"/>
                 <TextBlock x:Name="Url" 
                                Margin="4,4,0,4"
                                Text="{x:Bind _url}" 
@@ -75,7 +76,6 @@
                 </StackPanel>
             </StackPanel>
         </DataTemplate>
-        <!--#endregion-->
     </Page.Resources>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
@@ -87,8 +87,15 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Button Style="{ThemeResource EllipsisButton}"
-                    VerticalAlignment="Center"/>
+        <TextBlock
+                   HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    Tapped="TopNavMenuClicked"
+                   Margin="0,0,10,0"
+                   FontFamily="Quartz MS"
+            Style="{ThemeResource TitleTextBlockStyle}" 
+                   Text="MENU ¦"
+                   />
         <TextBlock Text="It, Security news feed" 
                    VerticalAlignment="Center"
                    Style="{ThemeResource TitleTextBlockStyle}" 
@@ -100,9 +107,6 @@
                   Grid.ColumnSpan="2">
         </GridView>
 
-        <!-- REMOVE THIS-->
-
-
-        <!--<local:SamplesPane x:Name="MySamplesPane" Grid.ColumnSpan="2" Grid.RowSpan="2"/>-->
+        <local:TopMenuControl x:Name="TopNavMenu" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
     </Grid>
 </Page>

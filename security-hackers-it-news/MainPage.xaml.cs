@@ -59,5 +59,27 @@ namespace security_hackers_it_news
             var uri = new Uri(@url);
             var success = await Windows.System.Launcher.LaunchUriAsync(uri);
         }
+
+        private void TopNavMenuClicked(object sender, RoutedEventArgs e)
+        {
+            TopNavMenu.TopNavSplitView.IsPaneOpen = !TopNavMenu.TopNavSplitView.IsPaneOpen;
+        }
+
+        private void Title_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            var text = ((TextBlock)sender).Text;
+            HNewsItemModel tmpModel = findByTitle(text.Trim());
+            if (tmpModel != null)
+                this.Frame.Navigate(typeof(HNStorieDetailsPage(tmpModel));
+            else
+                return;
+        }
+
+        private HNewsItemModel findByTitle(string title) {
+            foreach (HNewsItemModel hnim in news)
+                if (title.Equals(hnim.title))
+                    return hnim;
+            return null;
+        }
     }
 }

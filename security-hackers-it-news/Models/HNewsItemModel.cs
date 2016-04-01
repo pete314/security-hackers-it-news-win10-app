@@ -9,8 +9,9 @@ namespace security_hackers_it_news.Models
     /// <summary>
     /// Item model for hackers news entries
     /// </summary>
-    class HNewsItemModel
+    public class HNewsItemModel
     {
+        public HNewsItemModel() { }
         public string title { get; set; } //if job
         
         public string score { get; set; }//story score      

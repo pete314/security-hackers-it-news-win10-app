@@ -132,15 +132,17 @@ namespace security_hackers_it_news.security_hackers_it_news_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
-            _typeNameTable[0] = "security_hackers_it_news.MainPage";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable = new string[4];
+            _typeNameTable[0] = "security_hackers_it_news.TopMenuControl";
+            _typeNameTable[1] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[2] = "security_hackers_it_news.MainPage";
+            _typeNameTable[3] = "Windows.UI.Xaml.Controls.Page";
 
-            _typeTable = new global::System.Type[3];
-            _typeTable[0] = typeof(global::security_hackers_it_news.MainPage);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable = new global::System.Type[4];
+            _typeTable[0] = typeof(global::security_hackers_it_news.TopMenuControl);
+            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[2] = typeof(global::security_hackers_it_news.MainPage);
+            _typeTable[3] = typeof(global::Windows.UI.Xaml.Controls.Page);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -175,7 +177,8 @@ namespace security_hackers_it_news.security_hackers_it_news_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::security_hackers_it_news.MainPage(); }
+        private object Activate_0_TopMenuControl() { return new global::security_hackers_it_news.TopMenuControl(); }
+        private object Activate_2_MainPage() { return new global::security_hackers_it_news.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -187,18 +190,25 @@ namespace security_hackers_it_news.security_hackers_it_news_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  security_hackers_it_news.MainPage
-                userType = new global::security_hackers_it_news.security_hackers_it_news_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+            case 0:   //  security_hackers_it_news.TopMenuControl
+                userType = new global::security_hackers_it_news.security_hackers_it_news_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_0_TopMenuControl;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 1:   //  Windows.UI.Xaml.Controls.Page
+            case 1:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::security_hackers_it_news.security_hackers_it_news_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  Windows.UI.Xaml.Controls.UserControl
+            case 2:   //  security_hackers_it_news.MainPage
+                userType = new global::security_hackers_it_news.security_hackers_it_news_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_2_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 3:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::security_hackers_it_news.security_hackers_it_news_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
