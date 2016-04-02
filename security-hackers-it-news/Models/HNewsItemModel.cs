@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace security_hackers_it_news.Models
@@ -39,7 +41,10 @@ namespace security_hackers_it_news.Models
         public string time { get; set; }//Unix timestamp
         
         public string text { get; set; }
-        
+        //Simple removal of html entities and tags
+        public string _notagtext {
+            get { return WebUtility.HtmlDecode(Regex.Replace(text, "<.*?>", String.Empty));}
+        }
         public string date { get { return parseTimeStamp(this.time);} }
         /// <summary>
         /// Parse string time to string date

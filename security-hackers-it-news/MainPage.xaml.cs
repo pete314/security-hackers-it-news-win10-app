@@ -36,11 +36,12 @@ namespace security_hackers_it_news
             NewsList.Source = news;
             tryLoadContent();
         }
-        
-        public async void tryLoadContent() {
+
+        public async void tryLoadContent()
+        {
             string[] hnTopIds = await hnApiCli.getTopStoriesIdList();
             HNewsItemModel tmpHns;
-            int iCnt = 0;
+            int iCnt = 0;//@todo: This should be a setting param
             foreach (string id in hnTopIds)
             {
                 tmpHns = await hnApiCli.getStoryById(id);
@@ -68,16 +69,18 @@ namespace security_hackers_it_news
         private void Title_Tapped(object sender, TappedRoutedEventArgs e)
         {
             var text = ((TextBlock)sender).Text;
-            HNewsItemModel tmpModel = findByTitle(text.Trim());
-            if (tmpModel != null)
-                this.Frame.Navigate(typeof(HNStorieDetailsPage(tmpModel));
+            HNewsItemModel tmpModel = findByTitle(text);
+            if (tmpModel != null) {
+                this.Frame.Navigate(typeof(HNStorieDetailsPage), tmpModel);
+            }
             else
                 return;
         }
 
-        private HNewsItemModel findByTitle(string title) {
+        private HNewsItemModel findByTitle(string title)
+        {
             foreach (HNewsItemModel hnim in news)
-                if (title.Equals(hnim.title))
+                if (title == hnim.title)
                     return hnim;
             return null;
         }

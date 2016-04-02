@@ -200,3 +200,8 @@ E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hack
 E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\obj\x86\Debug\TopMenuControl.g.cs
 E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\obj\x86\Debug\TopMenuControl.xaml
 E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\obj\x86\Debug\TopMenuControl.xbf
+E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\obj\x86\Debug\HNStorieDetailsPage.g.i.cs
+E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\obj\x86\Debug\HNStorieDetailsPage.g.cs
+E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\obj\x86\Debug\HNStorieDetailsPage.xaml
+E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\obj\x86\Debug\HNStorieDetailsPage.xbf
+E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\bin\x86\Debug\HNStorieDetailsPage.xbf
