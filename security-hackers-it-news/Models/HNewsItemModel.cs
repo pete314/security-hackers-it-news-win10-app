@@ -43,7 +43,14 @@ namespace security_hackers_it_news.Models
         public string text { get; set; }
         //Simple removal of html entities and tags
         public string _notagtext {
-            get { return WebUtility.HtmlDecode(Regex.Replace(text, "<.*?>", String.Empty));}
+            get {
+                try
+                {
+                    return WebUtility.HtmlDecode(Regex.Replace(text, "<.*?>", String.Empty));
+                }
+                catch { }
+                return "";
+            }
         }
         public string date { get { return parseTimeStamp(this.time);} }
         /// <summary>
