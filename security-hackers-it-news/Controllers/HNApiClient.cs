@@ -32,69 +32,31 @@ namespace security_hackers_it_news.Controllers
         } 
 
         public async Task<string[]> getTopStoriesIdList() {
-            string jsonString = checkOfflineContent();
+            string jsonString = base.checkOfflineContent("HnTopStories");
             if (jsonString == null)
             {
                 jsonString = await tryParseUrl(
                     buildUrlString(top_stories_uri)
                 );
-                createOfflineContent(jsonString);
+                base.createOfflineContent(jsonString, "HnTopStories");
             }
 
             return JsonConvert.DeserializeObject<string[]>(jsonString);
         }
 
         public async Task<HNewsItemModel> getStoryById(string id) {
-            string jsonString = checkOfflineContent(id);
+            string jsonString = base.checkOfflineContent("HN" + id);
             if (jsonString == null)
             {
                 jsonString = await tryParseUrl(
                         buildUrlString(
                             string.Format(single_story_uri, id))
                     );
-                createOfflineContent(jsonString, id);
+                base.createOfflineContent(jsonString, "HN" + id);
             }
             //chould use a try catch, but it will return null if error
             return JsonConvert.DeserializeObject<HNewsItemModel>(jsonString);
         }
 
-        private string checkOfflineContent(string id = "") {
-            string IStorageFileName = (string)String.Format("HNdata_{0}.json", id);
-            var store = IsolatedStorageFile.GetUserStoreForApplication();
-            //check if local contetn is older than 15 minutes
-            if (store.FileExists(IStorageFileName) && DateTime.Now.AddMinutes(-15) > store.GetLastWriteTime(IStorageFileName)){
-                using (var fileStream = new IsolatedStorageFileStream(IStorageFileName, FileMode.Open, store))
-                {
-                    using (var stream = new StreamReader(fileStream))
-                    {
-                        return stream.ReadToEnd();
-                    }
-                }
-            }
-            else {
-                //if file exist and is old(has to be at this point), clean up
-                if (store.FileExists(IStorageFileName))
-                    store.DeleteFile(IStorageFileName);
-                return null;
-            }
-        }
-
-        private void createOfflineContent(string data, string id = "") {
-            string IStorageFileName = String.Format("HNdata_{0}.json", id);
-            var store = IsolatedStorageFile.GetUserStoreForApplication();
-            try
-            {
-                using (var fileStream = new IsolatedStorageFileStream(IStorageFileName, FileMode.Create, store))
-                {
-                    using (var stream = new StreamWriter(fileStream))
-                    {
-                        stream.Write(data);
-                    }
-                }
-            }
-            catch {
-               //@todo: notfy user data local storage is not accessible
-            }
-        }
     }
 }

@@ -34,12 +34,12 @@ namespace security_hackers_it_news
         }
         private void NavigateHackersNewsPage(object sender, RoutedEventArgs e)
         {
-
+            ((Frame)Window.Current.Content).Navigate(typeof(MainPage));
         }
 
         private void NavigateNetsecPage(object sender, RoutedEventArgs e)
         {
-
+            ((Frame)Window.Current.Content).Navigate(typeof(ReditNetsecNews));
         }
 
         private void NavigateSettingsPage(object sender, RoutedEventArgs e)

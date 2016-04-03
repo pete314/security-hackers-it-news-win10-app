@@ -14,24 +14,24 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Orientation" />
-      <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Margin" />
       <RootProperty Name="Text" />
       <RootProperty Name="Style" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Height" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="FontStyle" />
+      <RootProperty Name="Height" />
       <RootProperty Name="Padding" />
       <RootEvent Name="Tapped" />
     </RootType>
@@ -74,6 +74,7 @@
     </RootType>
     <RootType FullName="security_hackers_it_news.TopMenuControl" />
     <RootType FullName="security_hackers_it_news.MainPage" />
+    <RootType FullName="security_hackers_it_news.ReditNetsecNews" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Content" />
     </RootType>

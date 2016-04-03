@@ -11,14 +11,13 @@
     <Page.Resources>
         <CollectionViewSource x:Name="CommentsList" />
         <DataTemplate x:Name="CommentGridViewTemplate" x:DataType="data:HNewsItemModel">
-            <StackPanel Orientation="Vertical" Width="180" Height="160" Margin="10,15">
+            <StackPanel Orientation="Vertical" Height="160" Margin="10,15">
                 <TextBlock x:Name="Title" 
                                Margin="4,4,0,4"
                                Text="{x:Bind _notagtext}" 
                                x:Phase="1" 
                                Style="{ThemeResource BodyTextBlockStyle}" 
-                               HorizontalAlignment="Left"
-                           Height="85"/>
+                               HorizontalAlignment="Left"/>
                 <StackPanel VerticalAlignment="Bottom">
                     <Grid>
                         <Grid.RowDefinitions>

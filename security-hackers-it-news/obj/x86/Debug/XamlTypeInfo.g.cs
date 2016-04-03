@@ -132,19 +132,21 @@ namespace security_hackers_it_news.security_hackers_it_news_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[5];
+            _typeNameTable = new string[6];
             _typeNameTable[0] = "security_hackers_it_news.HNStorieDetailsPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "security_hackers_it_news.TopMenuControl";
             _typeNameTable[4] = "security_hackers_it_news.MainPage";
+            _typeNameTable[5] = "security_hackers_it_news.ReditNetsecNews";
 
-            _typeTable = new global::System.Type[5];
+            _typeTable = new global::System.Type[6];
             _typeTable[0] = typeof(global::security_hackers_it_news.HNStorieDetailsPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::security_hackers_it_news.TopMenuControl);
             _typeTable[4] = typeof(global::security_hackers_it_news.MainPage);
+            _typeTable[5] = typeof(global::security_hackers_it_news.ReditNetsecNews);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -182,6 +184,7 @@ namespace security_hackers_it_news.security_hackers_it_news_XamlTypeInfo
         private object Activate_0_HNStorieDetailsPage() { return new global::security_hackers_it_news.HNStorieDetailsPage(); }
         private object Activate_3_TopMenuControl() { return new global::security_hackers_it_news.TopMenuControl(); }
         private object Activate_4_MainPage() { return new global::security_hackers_it_news.MainPage(); }
+        private object Activate_5_ReditNetsecNews() { return new global::security_hackers_it_news.ReditNetsecNews(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -218,6 +221,13 @@ namespace security_hackers_it_news.security_hackers_it_news_XamlTypeInfo
             case 4:   //  security_hackers_it_news.MainPage
                 userType = new global::security_hackers_it_news.security_hackers_it_news_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_4_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  security_hackers_it_news.ReditNetsecNews
+                userType = new global::security_hackers_it_news.security_hackers_it_news_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_ReditNetsecNews;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
