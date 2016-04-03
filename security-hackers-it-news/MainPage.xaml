@@ -86,7 +86,7 @@
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-
+        <StackPanel x:Name="loaderRing"/>
         <TextBlock HorizontalAlignment="Left"
                    VerticalAlignment="Center"
                    Tapped="TopNavMenuClicked"

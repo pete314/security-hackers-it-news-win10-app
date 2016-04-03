@@ -21,15 +21,7 @@
                             Click="NavigateHackersNewsPage" 
                             HorizontalAlignment="Stretch" 
                             HorizontalContentAlignment="Left" />
-                <Button Content="Saved articles" 
-                            Click="NavigateSavedEntries"
-                            HorizontalAlignment="Stretch" 
-                            HorizontalContentAlignment="Left" />
-                <Button Content="Saved articles" 
-                            Click="NavigateSettingsPage"
-                            HorizontalAlignment="Stretch" 
-                            HorizontalContentAlignment="Left" />
-                
+
             </StackPanel>
         </SplitView.Pane>
     </SplitView>

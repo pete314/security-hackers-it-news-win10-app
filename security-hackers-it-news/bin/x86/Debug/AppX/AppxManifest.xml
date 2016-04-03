@@ -24,9 +24,14 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="security-hackers-it-news.exe" EntryPoint="security_hackers_it_news.App">
-      <uap:VisualElements DisplayName="security-hackers-it-news" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="security-hackers-it-news" BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
-        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      <uap:VisualElements DisplayName="Security, hackers, it news" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="News feed application, feeds from Hackers News(ycombinator), and Reddit Netsec." BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" ShortName="HSIT news"></uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\Hackers-security-it-news---logo-1240x600.png" BackgroundColor="#29abe2" />
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="portrait" />
+          <uap:Rotation Preference="landscape" />
+          <uap:Rotation Preference="landscapeFlipped" />
+        </uap:InitialRotationPreference>
       </uap:VisualElements>
     </Application>
   </Applications>

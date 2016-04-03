@@ -22,7 +22,7 @@ using Windows.UI.Xaml.Navigation;
 namespace security_hackers_it_news
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// The home page, holding latest news
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -39,11 +39,19 @@ namespace security_hackers_it_news
 
         public async void tryLoadContent()
         {
+            //Show loading
+            ProgressRing progressRing1 = new ProgressRing();
+            progressRing1.IsActive = true;
+            loaderRing.Children.Add(progressRing1);
+
             string[] hnTopIds = await hnApiCli.getTopStoriesIdList();
             HNewsItemModel tmpHns;
             int iCnt = 0;//@todo: This should be a setting param
             foreach (string id in hnTopIds)
             {
+                //@todo: Should be moved
+                progressRing1.IsActive = false;
+
                 tmpHns = await hnApiCli.getStoryById(id);
                 news.Add(
                     tmpHns

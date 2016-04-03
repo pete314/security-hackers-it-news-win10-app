@@ -345,15 +345,19 @@
     <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\Assets\Hackers-security-it-news---logo-1240x600.scale-200.png">
+      <PackagePath>Assets\Hackers-security-it-news---logo-1240x600.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
@@ -374,6 +378,9 @@
     <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\bin\x86\Debug\security-hackers-it-news.xr.xml">
       <PackagePath>security-hackers-it-news.xr.xml</PackagePath>

@@ -13,7 +13,6 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The User Control item template is documented at http://go.microsoft.com/fwlink/?LinkId=234236
 
 namespace security_hackers_it_news
 {
@@ -23,11 +22,7 @@ namespace security_hackers_it_news
         {
             this.InitializeComponent();
         }
-
-        private void NavigateSavedEntries(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
         private void NavigateHome(object sender, RoutedEventArgs e)
         {
             ((Frame)Window.Current.Content).Navigate(typeof(MainPage));
@@ -40,11 +35,6 @@ namespace security_hackers_it_news
         private void NavigateNetsecPage(object sender, RoutedEventArgs e)
         {
             ((Frame)Window.Current.Content).Navigate(typeof(ReditNetsecNews));
-        }
-
-        private void NavigateSettingsPage(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

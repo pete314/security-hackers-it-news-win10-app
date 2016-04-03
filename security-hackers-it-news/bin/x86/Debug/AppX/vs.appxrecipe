@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>3ff9d5f5-3d16-4c27-bb1a-b63f34bf4a30</PackageIdentityName>
     <IntermediateOutputPath>E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>9AEBC5A52A0768A7487BBB554327AEF24D2F032788BF5FF93387237716E36248</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>72915B3C530BFF608177DAA2D81D52B858C9F2206B8C73D4C3BCB4F39C55B8AC</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>3ff9d5f5-3d16-4c27-bb1a-b63f34bf4a30_1.0.0.0_x86__m9y1t5bzny2w4</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>3ff9d5f5-3d16-4c27-bb1a-b63f34bf4a30_m9y1t5bzny2w4!App</RegisteredUserModeAppID>
     <RegisteredPackageID>3ff9d5f5-3d16-4c27-bb1a-b63f34bf4a30</RegisteredPackageID>
@@ -22,13 +22,13 @@
     <AppXManifest Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-04-03T21:16:47.882</Modified>
+      <Modified>2016-04-03T22:09:45.279</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\bin\x86\Debug\security-hackers-it-news.exe">
       <PackagePath>entrypoint\security-hackers-it-news.exe</PackagePath>
-      <Modified>2016-04-03T21:16:47.289</Modified>
+      <Modified>2016-04-03T22:04:38.821</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\Microsoft.ApplicationInsights\2.0.1\lib\uap10.0\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -462,9 +462,15 @@
       <PackagePath>ApplicationInsights.config</PackagePath>
       <Modified>2016-03-20T10:48:04.374</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2016-03-20T10:47:41.591</Modified>
+    <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\Assets\Hackers-security-it-news---logo-1240x600.scale-200.png">
+      <PackagePath>Assets\Hackers-security-it-news---logo-1240x600.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-04-03T22:09:18.792</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-04-03T21:47:30.660</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -472,23 +478,22 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-10T21:09:42.000</Modified>
+      <Modified>2016-04-03T21:58:30.397</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-10T21:09:42.000</Modified>
+      <Modified>2016-04-03T21:54:51.995</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-10T21:09:42.000</Modified>
+      <Modified>2016-04-03T21:50:54.830</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-10T21:09:42.000</Modified>
+      <Modified>2016-04-03T21:53:30.297</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
@@ -498,7 +503,11 @@
     <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-10T21:09:42.000</Modified>
+      <Modified>2016-04-03T21:56:28.421</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2016-03-20T10:47:41.591</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\bin\x86\Debug\security-hackers-it-news.xr.xml">
       <PackagePath>security-hackers-it-news.xr.xml</PackagePath>
@@ -510,11 +519,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-04-03T21:16:47.754</Modified>
+      <Modified>2016-04-03T22:09:45.112</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\bin\x86\Debug\Core\security-hackers-it-news.exe">
       <PackagePath>security-hackers-it-news.exe</PackagePath>
-      <Modified>2016-04-03T21:16:47.881</Modified>
+      <Modified>2016-04-03T22:09:45.278</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
