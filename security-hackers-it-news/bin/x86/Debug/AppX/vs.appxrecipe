@@ -10,25 +10,25 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>3ff9d5f5-3d16-4c27-bb1a-b63f34bf4a30</PackageIdentityName>
     <IntermediateOutputPath>E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>72915B3C530BFF608177DAA2D81D52B858C9F2206B8C73D4C3BCB4F39C55B8AC</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>3ff9d5f5-3d16-4c27-bb1a-b63f34bf4a30_1.0.0.0_x86__m9y1t5bzny2w4</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>3ff9d5f5-3d16-4c27-bb1a-b63f34bf4a30_m9y1t5bzny2w4!App</RegisteredUserModeAppID>
-    <RegisteredPackageID>3ff9d5f5-3d16-4c27-bb1a-b63f34bf4a30</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=Pi</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <RegisteredManifestChecksum>339905E5B39AD3124ADCEDF1A1D3A3DBCE1E62ED514D48B1FDEB3FC323CB2DAC</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>44452PeterEndre.ITSecurityhackersnews_1.1.0.0_x86__gtk7yk4kyj7ha</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>44452PeterEndre.ITSecurityhackersnews_gtk7yk4kyj7ha!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>44452PeterEndre.ITSecurityhackersnews</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=656D872D-40A9-44EF-87B0-93A0A7928B2C</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.0.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-04-03T22:09:45.279</Modified>
+      <Modified>2016-04-03T23:18:49.637</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\bin\x86\Debug\security-hackers-it-news.exe">
       <PackagePath>entrypoint\security-hackers-it-news.exe</PackagePath>
-      <Modified>2016-04-03T22:04:38.821</Modified>
+      <Modified>2016-04-03T23:18:49.060</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\Microsoft.ApplicationInsights\2.0.1\lib\uap10.0\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -498,7 +498,7 @@
     <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-10T21:09:42.000</Modified>
+      <Modified>2016-04-03T23:05:20.031</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
@@ -511,7 +511,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\bin\x86\Debug\security-hackers-it-news.xr.xml">
       <PackagePath>security-hackers-it-news.xr.xml</PackagePath>
-      <Modified>2016-04-03T19:46:16.970</Modified>
+      <Modified>2016-04-03T23:18:04.294</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -519,11 +519,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-04-03T22:09:45.112</Modified>
+      <Modified>2016-04-03T23:18:49.517</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\bin\x86\Debug\Core\security-hackers-it-news.exe">
       <PackagePath>security-hackers-it-news.exe</PackagePath>
-      <Modified>2016-04-03T22:09:45.278</Modified>
+      <Modified>2016-04-03T23:18:49.636</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

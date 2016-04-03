@@ -1,0 +1,3 @@
+MainPackage=E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\bin\ARM\Release\Upload\security-hackers-it-news_1.1.1.0_ARM.appx
+SymbolPackage=E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\AppPackages\security-hackers-it-news_1.1.1.0\security-hackers-it-news_1.1.1.0_ARM.appxsym
+ResourcePack=E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\_scale-100.appx

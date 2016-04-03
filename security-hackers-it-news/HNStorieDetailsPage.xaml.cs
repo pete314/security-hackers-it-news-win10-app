@@ -48,12 +48,17 @@ namespace security_hackers_it_news
             newsPubliserTb.Text = "Publisher: " + reformatString(story.by, "\n");
             newsUrlTb.Text = "Url: " + reformatString(story.url, "\n");
             newsScoreTb.Text = reformatString(story._lscore, "\n");
+            //Show loading
+            ProgressRing progressRing1 = new ProgressRing();
+            progressRing1.IsActive = true;
+            loaderRing.Children.Add(progressRing1);
 
             //load sub comments
             HNewsItemModel tmpHns;
             int iCnt = 0;//@todo: This should be a setting param
             foreach (string id in story.kids)
             {
+                progressRing1.IsActive = false;
                 tmpHns = await hnApiCli.getStoryById(id);
                 comments.Add(
                     tmpHns

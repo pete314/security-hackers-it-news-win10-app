@@ -1,0 +1,2 @@
+MainPackage=E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\bin\x64\Release\Upload\security-hackers-it-news_1.1.1.0_x64.appx
+SymbolPackage=E:\Work\GMIT\PROJECTS\Windows_phone_sem_6\security-hackers-it-news\security-hackers-it-news\AppPackages\security-hackers-it-news_1.1.1.0\security-hackers-it-news_1.1.1.0_x64.appxsym

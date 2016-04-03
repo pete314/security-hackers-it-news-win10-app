@@ -86,7 +86,7 @@
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel x:Name="loaderRing"/>
+        
         <TextBlock HorizontalAlignment="Left"
                    VerticalAlignment="Center"
                    Tapped="TopNavMenuClicked"
@@ -99,12 +99,12 @@
                    VerticalAlignment="Center"
                    Style="{ThemeResource TitleTextBlockStyle}" 
                    Grid.Column="1"/>
-
         <GridView ItemsSource="{x:Bind NewsList.View}"
                   ItemTemplate="{StaticResource NewsGridViewTemplate}"
                   Grid.Row="1"
                   Grid.ColumnSpan="2">
         </GridView>
+        <StackPanel x:Name="loaderRing" Margin="0,25,0,0" Grid.Row="2" Padding="0,25,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
         <local:TopMenuControl x:Name="TopNavMenu" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
     </Grid>

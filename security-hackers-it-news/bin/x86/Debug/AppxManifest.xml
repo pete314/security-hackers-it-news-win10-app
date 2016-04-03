@@ -7,11 +7,11 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="3ff9d5f5-3d16-4c27-bb1a-b63f34bf4a30" Publisher="CN=Pi" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <Identity Name="44452PeterEndre.ITSecurityhackersnews" Publisher="CN=656D872D-40A9-44EF-87B0-93A0A7928B2C" Version="1.1.0.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="3ff9d5f5-3d16-4c27-bb1a-b63f34bf4a30" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>security-hackers-it-news</DisplayName>
-    <PublisherDisplayName>Pi</PublisherDisplayName>
+    <DisplayName>IT Security, hackers news</DisplayName>
+    <PublisherDisplayName>PeterEndre</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
