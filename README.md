@@ -10,11 +10,11 @@ The API clients and abstraction is created in a way which can make the further e
 The application has a basic local storage to save some bandwidth, and keeps the parsed content in "cache" for 15 minutes. This could be further extended to either add a setting for refresh or use this mechanism as save storage for articles. 
 
 ###File/folder structure
- **security-hackers-it-news-win10-app/*Page.xaml** - content pages are located in project root. 
- **--||--/Controllers** - controller folder contains all worker classes like AbstractRESTParser.
- **--||--/Models** - contains all the data model classes use in the project like HNewsItemModel
- **Logo** - folder contains the logo and screen designs
- **App_validation** - the certification for current build, test
+ **security-hackers-it-news-win10-app/*Page.xaml** - content pages are located in project root. <br/>
+ **--||--/Controllers** - controller folder contains all worker classes like AbstractRESTParser.<br/>
+ **--||--/Models** - contains all the data model classes use in the project like HNewsItemModel<br/>
+ **Logo** - folder contains the logo and screen designs<br/>
+ **App_validation** - the certification for current build, test<br/>
  
 ###External sources, useful links
 
