@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Controllers">
+    <Position X="3.167" Y="4.517" Height="0.291" Width="0.908" />
+  </Comment>
+  <Comment CommentText="Models">
+    <Position X="3.15" Y="6.004" Height="0.291" Width="0.908" />
+  </Comment>
+  <Comment CommentText="View/view controll">
+    <Position X="3.075" Y="10.594" Height="0.291" Width="1.4" />
+  </Comment>
+  <Class Name="security_hackers_it_news.App" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAQAAIAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="security_hackers_it_news.HNStorieDetailsPage" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="10" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAEgAAAAAAAAAAAABAAAAwQQAAAAAAQAAAAAAAEAAAA=</HashCode>
+      <FileName>HNStorieDetailsPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="security_hackers_it_news.DrillInNavigationTransitionInfo" Collapsed="true">
+    <Position X="3" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HNStorieDetailsPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="security_hackers_it_news.MainPage" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAABQAAAAAAAAAAAAAAIAEDAAA=</HashCode>
+      <FileName>MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="security_hackers_it_news.ReditNetsecNews" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="9.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAIAAAAAAAAAAAAAAAAAIIAEBAAA=</HashCode>
+      <FileName>ReditNetsecNews.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="security_hackers_it_news.TopMenuControl" BaseTypeListCollapsed="true">
+    <Position X="3" Y="11.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>TopMenuControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="security_hackers_it_news.Controllers.AbstractRESTParser">
+    <Position X="3" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAQAAAAEAQAAAAAAAAAAgABAAAAAABAgQAAQ=</HashCode>
+      <FileName>Controllers\AbstractRESTParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="security_hackers_it_news.Controllers.HNApiClient">
+    <Position X="5.75" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAQAAAAAABAAAAAAAAACAgABAAAEAAAAgAAAA=</HashCode>
+      <FileName>Controllers\HNApiClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="security_hackers_it_news.Controllers.ReditApiClient">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="security_hackers_it_news.Controllers.AbstractRESTParser" FixedFromPoint="true">
+      <Path>
+        <Point X="4.25" Y="0.5" />
+        <Point X="4.25" Y="0.125" />
+        <Point X="2.625" Y="0.125" />
+        <Point X="2.625" Y="4.579" />
+        <Point X="1.25" Y="4.579" />
+        <Point X="1.25" Y="4.204" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAIAAAAAACAAAAAQAAAAIAAAAAA=</HashCode>
+      <FileName>Controllers\ReditApiClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="security_hackers_it_news.Models.HNewsItemModel">
+    <Position X="5.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAhAAAAQAAAAABAACAIAoAAABQJAAAIAAAAAYAAAgQ=</HashCode>
+      <FileName>Models\HNewsItemModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="security_hackers_it_news.Models.ReditListingsModel">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIgAAAAQAEAAAAAEAAIEIAABAQIAAAAAAAAAQAAAgQ=</HashCode>
+      <FileName>Models\ReditListingsModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
